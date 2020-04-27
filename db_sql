@@ -1,0 +1,13 @@
+drop table tiempos;
+DELETE FROM tiempos WHERE id >= 0;
+--
+CREATE TABLE tiempos (
+     	id INTEGER PRIMARY KEY AUTOINCREMENT,
+     	tiempo_total NUMERIC NOT NULL,
+     	promedio NUMERIC NOT NULL,
+     	min NUMERIC NOT NULL,
+     	max NUMERIC NOT NULL
+     );
+
+select * from tiempos;
+insert INTO tiempos VALUES ('00:00:81.140932', '00:00:01.140932', '00:00:01.140932', '00:00:01.140932')
